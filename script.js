@@ -82,40 +82,35 @@ if (document.body.dataset.page === "index") {
 
 // L'éffet écriture
 
-window.addEventListener("scroll", (e) => {
+let whoiamTriggered = false;
+let presentationTriggered = false;
+let introTriggered = false;
+
+window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
 
-  console.log(scrollY);
-
-  // Scroll pour l'élément WhoIAm (Qui je suis)
-  if (scrollY > 500) {
+  // Who I am
+  if (scrollY > 500 && !whoiamTriggered) {
+    whoiamTriggered = true;
     whoiam.style.fontSize = "2.2rem";
     typeWriter();
-  } else if (scrollY < 500) {
-    console.log("test");
-    whoiam.style.fontSize = "1.875rem";
   }
-  // Scroll pour l'élément WhoIAm (Qui je suis)
 
-  // Scroll pour présentation
-  if (scrollY > 600) {
+  // Presentation
+  if (scrollY > 600 && !presentationTriggered) {
+    presentationTriggered = true;
     presentation.style.fontSize = "2.2rem";
-  } else if (scrollY < 600 || scrollY > 665) {
-    presentation.style.fontSize = "1.875rem";
   }
-  // Scroll pour présentation
 
-  if (scrollY > 675) {
+  // Introduction
+  if (scrollY > 675 && !introTriggered) {
+    introTriggered = true;
     introductionUnder.style.textDecoration = "underline";
     introductionUnder.style.fontSize = "1.8rem";
     introductionUnder.style.transform = "translate(50%)";
     setTimeout(() => {
       introductionUnder.style.color = "red";
     }, 500);
-  } else if (scrollY < 675) {
-    introductionUnder.style.textDecoration = "none";
-    introductionUnder.style.fontSize = "1.5rem";
-    introductionUnder.style.transform = "translate(0%)";
   }
 });
 // Who i am partie
