@@ -82,35 +82,68 @@ if (document.body.dataset.page === "index") {
 
 // L'éffet écriture
 
-let whoiamTriggered = false;
-let presentationTriggered = false;
-let introTriggered = false;
+document.addEventListener("DOMContentLoaded", () => {
+  const whoiam = document.getElementById("whoiam");
+  const presentation = document.getElementById("presentation");
+  const introductionUnder = document.getElementById("introduction");
 
-window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY;
+  let whoiamTriggered = false;
+  let presentationTriggered = false;
+  let introductionTriggered = false;
 
-  // Who I am
-  if (scrollY > 500 && !whoiamTriggered) {
-    whoiamTriggered = true;
-    whoiam.style.fontSize = "2.2rem";
-    typeWriter();
+  // Effet écriture une fois seulement
+  let i = 0;
+  const finalText = "Qui je suis ?|";
+
+  function typeWriter() {
+    if (i < finalText.length) {
+      whoiam.textContent = finalText.substring(0, i);
+      i++;
+      setTimeout(typeWriter, 150);
+    }
   }
 
-  // Presentation
-  if (scrollY > 600 && !presentationTriggered) {
-    presentationTriggered = true;
-    presentation.style.fontSize = "2.2rem";
-  }
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
 
-  // Introduction
-  if (scrollY > 675 && !introTriggered) {
-    introTriggered = true;
-    introductionUnder.style.textDecoration = "underline";
-    introductionUnder.style.fontSize = "1.8rem";
-    introductionUnder.style.transform = "translate(50%)";
-    setTimeout(() => {
-      introductionUnder.style.color = "red";
-    }, 500);
-  }
+    // Animation "Who I am"
+    if (scrollY > 500 && !whoiamTriggered) {
+      whoiam.style.fontSize = "2.2rem";
+      typeWriter();
+      whoiamTriggered = true;
+    } else if (scrollY <= 500 && whoiamTriggered) {
+      whoiam.style.fontSize = "1.875rem";
+      whoiam.textContent = "Qui je suis ?";
+      whoiamTriggered = false;
+      i = 0; // reset typewriter index si on veut refaire l'effet
+    }
+
+    // Animation présentation
+    if (scrollY > 600 && !presentationTriggered) {
+      presentation.style.fontSize = "2.2rem";
+      presentationTriggered = true;
+    } else if (scrollY <= 600 && presentationTriggered) {
+      presentation.style.fontSize = "1.875rem";
+      presentationTriggered = false;
+    }
+
+    // Animation introduction underline
+    if (scrollY > 675 && !introductionTriggered) {
+      introductionUnder.style.textDecoration = "underline";
+      introductionUnder.style.fontSize = "1.8rem";
+      introductionUnder.style.transform = "translateX(50%)";
+      setTimeout(() => {
+        introductionUnder.style.color = "red";
+      }, 500);
+      introductionTriggered = true;
+    } else if (scrollY <= 675 && introductionTriggered) {
+      introductionUnder.style.textDecoration = "none";
+      introductionUnder.style.fontSize = "1.5rem";
+      introductionUnder.style.transform = "translateX(0)";
+      introductionUnder.style.color = ""; // reset couleur
+      introductionTriggered = false;
+    }
+  });
 });
+
 // Who i am partie
