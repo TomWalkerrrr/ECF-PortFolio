@@ -132,13 +132,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (scrollY > 675 && !introductionTriggered) {
       introductionUnder.style.textDecoration = "underline";
       introductionUnder.style.fontSize = "1.8rem";
-      introductionUnder.classList.add("translate-x-1/2");
+      introductionUnder.classList.add(
+        "relative left-1/2 -translate-x-1/2 w-fit"
+      );
       introductionUnder.style.color = "#18D8FB";
       introductionTriggered = true;
     } else if (scrollY <= 675 && introductionTriggered) {
       introductionUnder.style.textDecoration = "none";
       introductionUnder.style.fontSize = "1.5rem";
-      introductionUnder.classList.remove("translate-x-1/2");
+      introductionUnder.classList.remove(
+        "relative left-1/2 -translate-x-1/2 w-fit"
+      );
       introductionUnder.style.color = ""; // reset couleur
       introductionTriggered = false;
     }
@@ -146,13 +150,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (scrollY > 825 && !passionTriggered) {
       passionUnder.style.textDecoration = "underline";
       passionUnder.style.fontSize = "1.8rem";
-      passionUnder.classList.add("translate-x-1/2");
+      passionUnder.classList.add("relative left-1/2 -translate-x-1/2 w-fit");
       passionTriggered = true;
       passionUnder.style.color = "#18D8FB";
     } else if (scrollY <= 825 && passionTriggered) {
       passionUnder.style.textDecoration = "none";
       passionUnder.style.fontSize = "1.5rem";
-      passionUnder.classList.remove("translate-x-1/2");
+      passionUnder.classList.remove("relative left-1/2 -translate-x-1/2 w-fit");
       passionUnder.style.color = "";
       passionTriggered = false;
     }
