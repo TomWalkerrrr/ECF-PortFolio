@@ -1,0 +1,88 @@
+body[data-page="index"] {
+    background: #03285D;
+    background-image: linear-gradient(#373c46 1px, transparent 1px), linear-gradient(to right, #373c46 1px, transparent 1px);
+    background-size: 82px 82px;
+    background-color: #01214d;
+}
+
+header {
+    user-select: none;
+}
+
+.bg-bleubasique {
+    background: #284D8E;
+}
+
+.bg-background {
+    background: #03285D;
+}
+
+.back {
+    user-select: none;
+}
+
+.text-bleuhovered {
+    color: #d8ffff;
+}
+
+.text-bleuciel {
+    color: #18D8FB;
+}
+
+
+.font-poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-asapcondensed {
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@keyframes ColorGradient {
+    0% {
+        color: #18D8FB;
+    }
+
+    50% {
+        color: #D8FFFF;
+    }
+
+    100% {
+        color: #18D8FB;
+    }
+}
+
+.animation-ColorGradient {
+    animation: ColorGradient 5s infinite ease-in-out;
+}
+
+/* Partie JS Css */
+
+#presentation {
+    transition: 0.5s ease;
+}
+
+#menumobile {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+#menumobile.open {
+    transform: translateX(0);
+}
+
+#whoiam {
+    transition: 0.5s ease;
+}
+
+#introduction {
+    transition: 0.5s ease;
+}
+
+#passion {
+    transition: 0.5s ease;
+}
