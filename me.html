@@ -1,0 +1,141 @@
+<!--
+          ╔══════════════════════════════════════════════════════╗
+          ║                      Tom REGNIER                     ║
+          ║     Code pensé, design affûté, passion incarnée      ║
+          ║                     Mobile First                     ║
+          ║        Projet : ECF N°1 | Date : 02/07/2025          ║
+          ╚══════════════════════════════════════════════════════╝
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Développeur web front-end spécialisé en HTML, CSS, JavaScript, Bootstrap et Tailwind. Découvrez mes projets modernes, responsives et orientés UX/UI.">
+    <meta name="author" content="Tom REGNIER">
+    <meta name="copyright" content="Tom Regnier">
+    <meta name="robots" content="index, follow">
+
+    <title>TomREGNIER - Mes passions</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- JS -->
+    <script src="./script.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!--  Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    /* Icon (Les matérial) */
+    .material-symbols-outlined {
+        font-size: 3rem;
+        line-height: 1;
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="title flex items-center justify-center w-full py-6">
+            <h2 class="text-3xl uppercase text-white font-poppins">Mes passions</h2>
+        </div>
+
+
+
+        <div>
+
+            <div class="back w-10 fixed top-4 left-4 z-50">
+                <span id="flecheback" class="material-symbols-outlined text-bleuhovered">arrow_back</span>
+            </div>
+
+        </div>
+
+        <!-- ⬇️ NAVIGATION MOBILE -->
+        <nav id="menumobile"
+            class="fixed top-40 left-4 w-16 flex flex-col space-y-10 rounded bg-gray-800 text-white items-center justify-center py-8 z-50">
+
+
+            <div class="home flex relative">
+                <span class="material-symbols-outlined text-white text-8xl hover:text-cyan-400">
+                    cottage
+                </span>
+            </div>
+
+            <a href="./me.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-8xl text-bleuhovered cursor-pointer">
+                        face_5
+                    </span>
+                </div>
+            </a>
+
+            <div class="home flex relative">
+                <span class="material-symbols-outlined text-white text-8xl hover:text-cyan-400 cursor-pointer">
+                    business_center
+                </span>
+            </div>
+
+            <div class="home flex relative">
+                <span class="material-symbols-outlined text-white text-8xl hover:text-cyan-400 cursor-pointer">
+                    mail
+                </span>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container flex mx-auto justify-center">
+            <div class="design">
+                <div class="titleFirst text-3xl text-white font-poppins uppercase">
+                    <h2>Le <span id="DESIGND">d</span><span id="DESIGNE">e</span><span id="DESIGNS">s</span><span
+                            id="DESIGNI">i</span><span id="DESIGNG">g</span><span id="DESIGNN">n</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <hr class="w-2/4 mx-auto mt-5 text-white">
+
+        <div
+            class="boiteText bg-bleubasique mt-8 rounded w-4/5 text-white font-asapcondensed p-3 text-lg mx-auto text-center">
+            <p>Le <span class="text-bleuciel">design</span> est une passion que j’ai commencée à développer
+                très tôt.
+                Dès mes débuts en
+                développement, voir une idée prendre vie à partir de rien et être fier du rendu final a été pour
+                moi l’une des meilleures sensations.</p>
+        </div>
+
+        <hr class="w-2/4 mx-auto mt-12 text-white">
+
+        <div class="titleDiv flex justify-center mx-auto mt-10">
+            <h2 class="titlesecond text-3xl text-white font-poppins uppercase">Une passion</h2>
+        </div>
+        <div
+            class="boiteTextSeconde bg-bleubasique mt-8 rounded w-4/5 text-white font-asapcondensed p-3 text-lg mx-auto text-center">
+            <p>Le côté créatif du design et la multitude de possibilités qu’il offre rendent chaque projet unique. C’est
+                ce qui me passionne : pouvoir imaginer, explorer et donner vie à des idées originales.</p>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
