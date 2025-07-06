@@ -132,13 +132,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (scrollY > 675 && !introductionTriggered) {
       introductionUnder.style.textDecoration = "underline";
       introductionUnder.style.fontSize = "1.8rem";
-      introductionUnder.style.transform = "translateX(50%)";
+      introductionUnder.classList.add("translate-x-1/2");
       introductionUnder.style.color = "#18D8FB";
       introductionTriggered = true;
     } else if (scrollY <= 675 && introductionTriggered) {
       introductionUnder.style.textDecoration = "none";
       introductionUnder.style.fontSize = "1.5rem";
-      introductionUnder.style.transform = "translateX(0)";
+      introductionUnder.classList.remove("translate-x-1/2");
       introductionUnder.style.color = ""; // reset couleur
       introductionTriggered = false;
     }
@@ -146,14 +146,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (scrollY > 825 && !passionTriggered) {
       passionUnder.style.textDecoration = "underline";
       passionUnder.style.fontSize = "1.8rem";
-      passionUnder.style.transform = "translateX(50%)";
+      passionUnder.classList.add("translate-x-1/2");
       passionTriggered = true;
       passionUnder.style.color = "#18D8FB";
     } else if (scrollY <= 825 && passionTriggered) {
       passionUnder.style.textDecoration = "none";
       passionUnder.style.fontSize = "1.5rem";
-      passionUnder.style.transform = "translateX(0)";
-      passionUnder.style.color = ""; // reset couleur
+      passionUnder.classList.remove("translate-x-1/2");
+      passionUnder.style.color = "";
       passionTriggered = false;
     }
   });
