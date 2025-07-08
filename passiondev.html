@@ -1,0 +1,155 @@
+<!--
+          ╔══════════════════════════════════════════════════════╗
+          ║                      Tom REGNIER                     ║
+          ║     Code pensé, design affûté, passion incarnée      ║
+          ║                     Mobile First                     ║
+          ║        Projet : ECF N°1 | Date : 02/07/2025          ║
+          ╚══════════════════════════════════════════════════════╝
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Développeur web front-end spécialisé en HTML, CSS, JavaScript, Bootstrap et Tailwind. Découvrez mes projets modernes, responsives et orientés UX/UI.">
+    <meta name="author" content="Tom REGNIER">
+    <meta name="copyright" content="Tom Regnier">
+    <meta name="robots" content="index, follow">
+
+    <title>TomREGNIER - Mes passions</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- JS -->
+    <script src="./scriptpassion.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!--  Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    /* Icon (Les matérial) */
+    .material-symbols-outlined {
+        font-size: 3rem;
+        line-height: 1;
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="title flex items-center justify-center w-full py-6">
+            <h2 class="text-3xl uppercase text-white font-poppins">Mes passions</h2>
+        </div>
+
+
+
+        <div>
+
+            <div class="back w-10 fixed top-4 left-4 z-50">
+                <span id="flecheback" class="material-symbols-outlined text-bleuhovered">arrow_back</span>
+            </div>
+
+        </div>
+
+        <!-- ⬇️ NAVIGATION MOBILE -->
+        <nav id="menumobile"
+            class="fixed top-40 left-4 w-16 flex flex-col space-y-10 rounded bg-gray-800 text-white items-center justify-center py-8 z-50">
+
+
+            <div class="home flex relative">
+                <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400">
+                    cottage
+                </span>
+            </div>
+
+            <div class="home flex relative">
+                <span class="material-symbols-outlined text-bleuhovered">
+                    face_5
+                </span>
+            </div>
+
+            <div class="home flex relative">
+                <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400 cursor-pointer">
+                    business_center
+                </span>
+            </div>
+
+            <div class="home flex relative">
+                <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400 cursor-pointer">
+                    mail
+                </span>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container flex mx-auto justify-center">
+            <div class="design">
+                <div class="titledev text-3xl text-white font-poppins uppercase">
+                    <span id="D">d</span>
+                    <span id="E">é</span>
+                    <span id="V">v</span>
+                    <span id="E">e</span>
+                    <span id="L">l</span>
+                    <span id="O">o</span>
+                    <span id="P">p</span>
+                    <span id="P">p</span>
+                    <span id="E">e</span>
+                    <span id="M">m</span>
+                    <span id="E">e</span>
+                    <span id="N">n</span>
+                    <span id="T">t</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="w-2/4 mx-auto mt-5 text-white">
+
+        <div class="containertext bg-bleubasique mt-5 w-80 mx-auto mt-2 p-3 rounded-lg">
+            <div class="text text-white font-asapcondensed text-xl">
+                <p>Depuis plus de cinq ans, je m’intéresse au développement. Ce domaine m’a toujours intrigué par sa
+                    capacité à transformer des idées en solutions concrètes. J’ai commencé en apprenant par moi-même, en
+                    testant, en me trompant, puis en progressant petit à petit. Cette passion s’est développée
+                    naturellement au fil du temps.
+                    Depuis environ deux ans, je consacre plus de temps à pratiquer et à approfondir mes connaissances.
+                    J’ai eu l’occasion de vivre une première expérience dans ce domaine, qui m’a permis de participer à
+                    des projets et d’appliquer mes compétences</p>
+            </div>
+        </div>
+
+        <hr class="w-2/4 mx-auto mt-5 text-white pb-5">
+
+        <div id="codecontainer" class="bg-[#1F2937] mx-auto p-4 rounded-xl w-96 h-auto">
+            <p id="paragrapheforcode" class="text-white font-mono text-xl whitespace-pre-wrap"></p>
+        </div>
+
+        <div class="carte mt-5 bg-bleubasique p-2 w-64 mx-auto rouded-xl h-auto">
+            <div class="insidecard text-white">
+                <h2 class="text-2xl text-center uppercase">Réalisation</h2>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

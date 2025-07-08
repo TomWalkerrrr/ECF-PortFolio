@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Effet Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #paragrapheforcode::after {
+            content: '|';
+            animation: blink 1s infinite;
+            color: white;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+
+    <div id="codecontainer" class="bg-[#1F2937] p-4 rounded-xl w-96 h-auto">
+        <p id="paragrapheforcode" class="text-white font-mono text-xl whitespace-pre-wrap"></p>
+    </div>
+
+    <script>
+        const fragments = [
+            { text: "<", class: "text-bleuciel" },
+            { text: "div", class: "text-red-400" },
+            { text: " ", class: "" },
+            { text: "class=", class: "text-orange-200" },
+            { text: '"cartePrésentation block bg-[#1F2937] mx-auto rounded-xl w-25"', class: "text-emerald-500" },
+            { text: ">", class: "text-bleuciel" },
+        ];
+
+        const target = document.getElementById("paragrapheforcode");
+
+        let fragIndex = 0;
+        let charIndex = 0;
+        let currentSpan = null;
+
+        function typeNextLetter() {
+            if (fragIndex >= fragments.length) {
+                clearInterval(typingInterval);
+                return;
+            }
+
+            const frag = fragments[fragIndex];
+
+            if (charIndex === 0) {
+                currentSpan = document.createElement("span");
+                if (frag.class) currentSpan.classList.add(...frag.class.split(" "));
+                target.appendChild(currentSpan);
+            }
+
+            currentSpan.textContent += frag.text.charAt(charIndex);
+            charIndex++;
+
+            if (charIndex >= frag.text.length) {
+                fragIndex++;
+                charIndex = 0;
+            }
+        }
+
+        const typingInterval = setInterval(typeNextLetter, 50);
+    </script>
+</body>
+
+</html>
