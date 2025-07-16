@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 
     <!-- JS -->
@@ -118,7 +118,7 @@
 
         <div>
 
-            <div class="back w-10 fixed top-4 left-4 z-50">
+            <div class="back w-10 fixed top-4 left-4 z-50 lg:hidden">
                 <span id="flecheback" class="material-symbols-outlined text-bleuhovered">arrow_back</span>
             </div>
 
@@ -126,14 +126,15 @@
 
         <!-- ⬇️ NAVIGATION MOBILE -->
         <nav id="menumobile"
-            class="fixed top-40 left-4 w-16 flex flex-col space-y-10 rounded bg-gray-800 text-white items-center justify-center py-8 z-50">
+            class="fixed lg:hidden top-40 left-4 w-16 flex flex-col space-y-10 rounded bg-gray-800 text-white items-center justify-center py-8 z-50">
 
-
-            <div class="home flex relative">
-                <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400">
-                    cottage
-                </span>
-            </div>
+            <a href="./index.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400">
+                        cottage
+                    </span>
+                </div>
+            </a>
 
             <div class="home flex relative">
                 <span class="material-symbols-outlined text-bleuhovered">
@@ -141,17 +142,21 @@
                 </span>
             </div>
 
-            <div class="home flex relative">
-                <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400 cursor-pointer">
-                    business_center
-                </span>
-            </div>
+            <a href="./projet.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400 cursor-pointer">
+                        business_center
+                    </span>
+                </div>
+            </a>
 
-            <div class="home flex relative">
-                <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400 cursor-pointer">
-                    mail
-                </span>
-            </div>
+            <a href="./contact.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400 cursor-pointer">
+                        mail
+                    </span>
+                </div>
+            </a>
 
         </nav>
     </header>
@@ -267,15 +272,8 @@
         <div class="button flex flex-col sm:flex-row sm:justify-between items-center gap-6 px-8 mt-12">
             <a href="./index.html">
                 <button
-                    class="animated-border-button w-96 transition-ease duration-300 hover:text-2xl bg-bleubasique hover:shadow-[0px_0px_40px_10px_rgba(24,_216,_251,_0.7)] hover:bg-cyan-500 p-5 text-white text-xl justify-center rounded-[4px] font-poppins flex">
-                    Passion Précédente
-                </button>
-            </a>
-
-            <a href="./index.html">
-                <button
-                    class="animated-border-button w-96 transition-ease duration-300 hover:text-2xl bg-bleubasique hover:shadow-[0px_0px_40px_10px_rgba(24,_216,_251,_0.7)] hover:bg-cyan-500 p-5 text-white text-xl justify-center rounded-[4px] font-poppins flex">
-                    Passion Suivante
+                    class="animated-border-button lg:mx-auto w-96 transition-ease duration-300 hover:text-2xl bg-bleubasique hover:shadow-[0px_0px_40px_10px_rgba(24,_216,_251,_0.7)] hover:bg-cyan-500 p-5 text-white text-xl justify-center rounded-[4px] font-poppins flex">
+                    Retour à l'accueil
                 </button>
             </a>
         </div>
