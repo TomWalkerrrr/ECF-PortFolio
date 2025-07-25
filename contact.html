@@ -171,40 +171,42 @@
 
     <main>
 
-        <div class="emailform">
-            <h2 class="text-white text-2xl uppercase font-poppins text-center">Email</h2>
-            <input placeholder="Votre email..."
-                class="flex mt-2 text-white font-asapcondensed w-64 border text-xl bg-[#1F2937] mx-auto text-center rounded-lg h-8"
-                type="email" name="Email" id="emailid">
-        </div>
+        <form action="https://formspree.io/f/xqalqqpe" method="POST">
+            <div class="emailform">
+                <h2 class="text-white text-2xl uppercase font-poppins text-center">Email</h2>
+                <input placeholder="Votre email..."
+                    class="flex lg:w-96 h-15 mt-2 text-white font-asapcondensed w-64 shadow text-xl bg-[#1F2937] mx-auto text-center rounded-lg h-8"
+                    type="email" name="Email" id="emailid">
+            </div>
 
-        <div class="nameEntreprise mt-12">
-            <h2 class="text-white text-2xl uppercase font-poppins text-center">Nom / Entreprise</h2>
-            <input placeholder="Votre nom..."
-                class="flex mt-2 text-white font-asapcondensed w-64 border text-xl bg-[#1F2937] mx-auto text-center rounded-lg h-8"
-                type="text" name="Name" id="textmail">
-        </div>
+            <div class="nameEntreprise mt-12">
+                <h2 class="text-white text-2xl uppercase font-poppins text-center">Nom / Entreprise</h2>
+                <input placeholder="Votre nom..."
+                    class="flex h-15 lg:w-96 mt-2 text-white font-asapcondensed w-64 shadow text-xl bg-[#1F2937] mx-auto text-center rounded-lg h-8"
+                    type="text" name="Name" id="textmail">
+            </div>
 
-        <div class="numerodecontact mt-12">
-            <h2 class="text-white text-2xl uppercase font-poppins text-center">Numéro</h2>
-            <input placeholder="Votre numéro..."
-                class="flex mt-2 text-white font-asapcondensed w-64 border text-xl bg-[#1F2937] mx-auto text-center rounded-lg h-8"
-                type="number" name="numerotel" id="numero" max="12">
-        </div>
+            <div class="numerodecontact mt-12">
+                <h2 class="text-white text-2xl uppercase font-poppins text-center">Numéro</h2>
+                <input placeholder="Votre numéro..."
+                    class="flex mt-2 lg:w-96 h-15 text-white font-asapcondensed w-64 shadow text-xl bg-[#1F2937] mx-auto text-center rounded-lg h-8"
+                    type="number" name="numerotel" id="numero">
+            </div>
 
-        <div class="message mt-12">
-            <h2 class="text-white text-2xl uppercase font-poppins text-center">Message</h2>
-            <textarea placeholder="Votre message..."
-                class="mt-2 flex font-asapcondensed text-white mx-auto w-64 border text-xl bg-[#1F2937] mx-auto text-center rounded-lg h-64 resize-none"
-                name="message" id="message"></textarea>
-        </div>
+            <div class="message mt-12">
+                <h2 class="text-white text-2xl uppercase font-poppins text-center">Message</h2>
+                <textarea placeholder="Votre message..."
+                    class="mt-2 flex font-asapcondensed lg:w-196 text-white mx-auto w-64  text-xl bg-[#1F2937] mx-auto text-center rounded-lg h-64 resize-none"
+                    name="message" id="message"></textarea>
+            </div>
 
-        <div class="button">
-            <button type="button"
-                class="mt-12 mb-12 bg-bleubasique w-64 flex h-12 mx-auto text-center text-white text-2xl rounded">
-                <h2 class="flex mx-auto text-center my-auto uppercase">Envoyé</h2>
-            </button>
-        </div>
+            <div class="button">
+                <button type="submit"
+                    class="mt-12 mb-12 hover:h-15 bg-bleubasique w-64 hover:w-96 font-poppins flex h-12 mx-auto text-center hover:text-3xl transition-ease duration-300 text-white text-2xl rounded">
+                    <h2 class="flex mx-auto text-center my-auto uppercase">Envoyé</h2>
+                </button>
+            </div>
+        </form>
 
     </main>
 
