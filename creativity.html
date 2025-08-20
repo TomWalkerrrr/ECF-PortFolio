@@ -1,0 +1,286 @@
+<!--
+          ╔══════════════════════════════════════════════════════╗
+          ║                      Tom REGNIER                     ║
+          ║     Code pensé, design affûté, passion incarnée      ║
+          ║                     Mobile First                     ║
+          ║        Projet : ECF N°1 | Date : 02/07/2025          ║
+          ╚══════════════════════════════════════════════════════╝
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Développeur web front-end spécialisé en HTML, CSS, JavaScript, Bootstrap et Tailwind. Découvrez mes projets modernes, responsives et orientés UX/UI.">
+    <meta name="author" content="Tom REGNIER">
+    <meta name="copyright" content="Tom Regnier">
+    <meta name="robots" content="index, follow">
+
+    <title>TomREGNIER - Mes passions</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <!-- JS -->
+    <script src="./scriptCreativity.js" defer></script>
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+    <!--  Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    /* Icon (Les matérial) */
+    .material-symbols-outlined {
+        font-size: 3rem;
+        line-height: 1;
+    }
+</style>
+
+<body id="body" class="transition-colors duration-500 ease-in-out">
+
+    <header>
+        <!-- 🧑‍💻 Navigation desktop -->
+
+        <nav id="desktopnav"
+            class="fixed top-4 hidden lg:flex left-0 right-0 bg-[#1F2937] z-50 rounded-lg flex space-x-15 w-max mx-auto">
+
+            <a href="./index.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        cottage
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400 transition">
+                        Accueil
+                    </h2>
+                </div>
+            </a>
+
+            <div class="homenavdesk flex group cursor-pointer">
+                <span class="material-symbols-outlined text-bleuhovered text-8xl group-hover:text-cyan-400 transition">
+                    face_5
+                </span>
+                <h2 class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 text-bleuhovered">
+                    A propos
+                </h2>
+            </div>
+
+            <a href="./projet.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        business_center
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400 transition">
+                        Réalisation
+                    </h2>
+                </div>
+            </a>
+
+            <a href="./contact.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        mail
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400 transition">
+                        Contact
+                    </h2>
+                </div>
+            </a>
+
+        </nav>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- 🧑‍💻 Navigation desktop -->
+        <div class="title flex items-center justify-center w-full py-6">
+            <h2 class="text-3xl uppercase text-white font-poppins">Mes passions</h2>
+        </div>
+
+
+
+        <div>
+
+            <div class="back w-10 fixed lg:hidden top-4 left-4 z-50">
+                <span id="flecheback" class="material-symbols-outlined text-bleuhovered">arrow_back</span>
+            </div>
+
+        </div>
+
+        <!-- ⬇️ NAVIGATION MOBILE -->
+        <nav id="menumobile"
+            class="fixed lg:hidden top-40 left-4 w-16 flex flex-col space-y-10 rounded bg-gray-800 text-white items-center justify-center py-8 z-50">
+
+            <a href="./index.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400">
+                        cottage
+                    </span>
+                </div>
+            </a>
+
+            <div class="home flex relative">
+                <span class="material-symbols-outlined text-bleuhovered">
+                    face_5
+                </span>
+            </div>
+
+            <a href="./projet.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400 cursor-pointer">
+                        business_center
+                    </span>
+                </div>
+            </a>
+
+            <a href="./contact.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400 cursor-pointer">
+                        mail
+                    </span>
+                </div>
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="containerprincipale"
+            class="containercontenue bg-bleubasique w-80 lg:w-4/5 rounded-lg block mx-auto h-auto">
+            <h2 id="textcontainerprincipale" class="uppercase font-poppins pt-4 text-white text-2xl text-center">La
+                créativité</h2>
+            <p id="soustextprincipale" class="text-white font-asapcondensed text-lg p-4">
+                Depuis toujours, la créativité occupe une place centrale dans ma vie. J’ai toujours ressenti ce besoin
+                d’imaginer, d’inventer, de donner forme à des idées. Peu importe le support ou le domaine, ce qui
+                m’anime, c’est le processus de création : partir de rien et construire quelque chose d’unique.
+                Ce que j’aime dans la créativité, c’est sa liberté. Il n’y a pas de limites, pas de règles figées. C’est
+                un espace où l’on peut explorer, expérimenter, se tromper, recommencer, et surtout apprendre. Pour moi,
+                créer, c’est aussi une manière de m’exprimer, de réfléchir autrement, de voir le monde sous un autre
+                angle.
+                C’est cette passion qui me pousse à toujours chercher de nouvelles idées, à m’intéresser à différents
+                domaines et à me dépasser dans ce que j’entreprends. La créativité n’est pas juste un passe-temps :
+                c’est une manière de penser, de vivre, et d’avancer.</p>
+        </div>
+
+        <hr class="mt-5 w-2/4 mx-auto mb-5 text-white">
+
+
+        <div id="boitecreate"
+            class="modificationpage bg-[#1F2937] shadow shadow-lg mb-12 rounded-lg w-80 lg:w-4/5 rouded-lg mx-auto">
+            <div class="textcontainer">
+                <h2 id="textcreate" class="text-2xl font-bakbakone flex justify-center text-bleuciel uppercase">Créer la
+                    page</h2>
+
+                <div class="iconAndTextLinear flex">
+
+                    <span class="material-symbols-outlined text-bleuciel">
+                        texture
+                    </span>
+                    <h2 id="linear" class="text-xl w-3/4 font-asapcondensed text-white uppercase my-auto">Fond linéaire
+                    </h2>
+                    <input class="w-2/4 h-[1.5rem] my-auto" type="checkbox" name="Checkbox" id="checkboxlinear">
+                </div>
+
+
+
+                <div class="iconAndTextBorder flex">
+
+                    <span class="material-symbols-outlined text-bleuciel">
+                        animation
+                    </span>
+                    <h2 id="animation" class="text-xl w-3/4 font-asapcondensed text-white uppercase my-auto">Animation
+                    </h2>
+                    <input class="w-2/4 h-[1.5rem] my-auto" type="checkbox" name="Checkbox" id="checkboxanimation">
+                </div>
+
+                <br>
+
+                <div class="iconAndTextBorder flex">
+
+                    <span class="material-symbols-outlined text-bleuciel">
+                        border_color
+                    </span>
+                    <h2 id="color" class="text-xl w-3/4 font-asapcondensed text-white uppercase my-auto">Couleur texte
+                    </h2>
+                </div>
+
+                <div class="containerOption text-center lg:text-left lg:ml-28">
+                    <h2 id="red" class="text-xl w-3/4 font-asapcondensed text-white uppercase my-auto">Rouge</h2>
+                    <br>
+                    <h2 id="yellow" class="text-xl w-3/4 font-asapcondensed text-white uppercase my-auto">Jaune</h2>
+                    <br>
+                    <h2 id="blue" class="text-xl w-3/4 font-asapcondensed text-white uppercase my-auto">Bleu</h2>
+                </div>
+
+                <br>
+
+                <div class="containerBorderBox flex">
+                    <span class="material-symbols-outlined text-bleuciel">
+                        frame_source
+                    </span>
+                    <h2 id="borderboite" class="text-xl w-3/4 font-asapcondensed text-white uppercase my-auto">Bordure
+                        Boite</h2>
+                    <input id="checkboxborder" class="w-2/4 h-[1.5rem] my-auto" type="checkbox" name="Checkbox"
+                        id="checkboxborder">
+                </div>
+
+                <br>
+
+                <div class="iconAndTextBorder flex">
+
+                    <span class="material-symbols-outlined text-bleuciel">
+                        text_increase
+                    </span>
+                    <h2 id="tailletext" class="text-xl w-3/4 font-asapcondensed text-white uppercase my-auto">Taille
+                        texte</h2>
+                </div>
+
+                <div class="containerFontSize text-center lg:text-left lg:ml-28">
+                    <h2 id="unrem" class="text-xl w-3/4 font-asapcondensed text-white uppercase my-auto">1 REM</h2>
+                    <br>
+                    <h2 id="deuxrem" class="text-xl w-3/4 font-asapcondensed text-white uppercase my-auto">2 REM</h2>
+                    <br>
+                    <h2 id="troisrem" class="text-xl w-3/4 font-asapcondensed text-white uppercase my-auto">3 REM</h2>
+                </div>
+
+                <br>
+
+
+                <div class="checkboxcontainer">
+
+                </div>
+            </div>
+        </div>
+        <div class="button flex flex-col sm:flex-row sm:justify-between items-center gap-6 px-8 mt-12">
+            <a href="./index.html">
+                <button
+                    class="animated-border-button lg:mx-auto w-96 transition-ease duration-300 hover:text-2xl bg-bleubasique hover:shadow-[0px_0px_40px_10px_rgba(24,_216,_251,_0.7)] hover:bg-cyan-500 p-5 text-white text-xl justify-center rounded-[4px] font-poppins flex">
+                    Retour à l'accueil
+                </button>
+            </a>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

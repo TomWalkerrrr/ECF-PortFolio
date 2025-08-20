@@ -1,0 +1,215 @@
+<!--
+          ╔══════════════════════════════════════════════════════╗
+          ║                      Tom REGNIER                     ║
+          ║     Code pensé, design affûté, passion incarnée      ║
+          ║                     Mobile First                     ║
+          ║        Projet : ECF N°1 | Date : 02/07/2025          ║
+          ╚══════════════════════════════════════════════════════╝
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Développeur web front-end spécialisé en HTML, CSS, JavaScript, Bootstrap et Tailwind. Découvrez mes projets modernes, responsives et orientés UX/UI.">
+    <meta name="author" content="Tom REGNIER">
+    <meta name="copyright" content="Tom Regnier">
+    <meta name="robots" content="index, follow">
+
+    <title>TomREGNIER - Contact</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <!-- JS -->
+    <script src="./contactscript.js" defer></script>
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+    <!--  Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    /* Icon (Les matérial) */
+    .material-symbols-outlined {
+        font-size: 3rem;
+        line-height: 1;
+    }
+</style>
+
+<body id="body" class="transition-colors duration-500 ease-in-out">
+
+    <header>
+
+        <!-- 🧑‍💻 Navigation desktop -->
+
+        <nav id="desktopnav"
+            class="fixed top-4 hidden lg:flex left-0 right-0 bg-[#1F2937] z-50 rounded-lg flex space-x-15 w-max mx-auto">
+
+            <a href="./index.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        cottage
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400 transition">
+                        Accueil
+                    </h2>
+                </div>
+            </a>
+
+            <a href="./me.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        face_5
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400">
+                        A propos
+                    </h2>
+                </div>
+            </a>
+
+            <a href="./projet.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        business_center
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400 transition">
+                        Réalisation
+                    </h2>
+                </div>
+            </a>
+
+            <div class="homenavdesk flex group cursor-pointer">
+                <span class="material-symbols-outlined text-white text-8xl text-bleuhovered transition">
+                    mail
+                </span>
+                <h2
+                    class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 text-bleuhovered transition">
+                    Contact
+                </h2>
+            </div>
+
+        </nav>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- 🧑‍💻 Navigation desktop -->
+        <div class="title flex items-center justify-center w-full py-6">
+            <h2 id="headertitle" class="text-3xl uppercase text-white font-poppins">Contact</h2>
+        </div>
+
+        <div class="titlepassion">
+            <!-- <h2 id="soustitle" class="uppercase text-white flex font-poppins justify-center text-2xl"></h2> -->
+        </div>
+
+        <hr class="mt-5 w-2/4 flex mx-auto pb-5 text-white">
+
+        <div>
+
+            <div class="back w-10 fixed top-4 left-4 z-50 lg:hidden">
+                <span id="flecheback" class="material-symbols-outlined text-bleuhovered">arrow_back</span>
+            </div>
+
+        </div>
+
+
+        <!-- ⬇️ NAVIGATION MOBILE -->
+        <nav id="menumobile"
+            class="fixed top-40 lg:hidden left-4 w-16 flex flex-col space-y-10 rounded bg-gray-800 text-white items-center justify-center py-8 z-50">
+
+            <a href="./index.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400">
+                        cottage
+                    </span>
+                </div>
+            </a>
+
+            <a href="./me.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white hover:text-cyan-400">
+                        face_5
+                    </span>
+                </div>
+            </a>
+
+            <a href="./projet.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400 cursor-pointer">
+                        business_center
+                    </span>
+                </div>
+            </a>
+
+            <div class="home flex relative">
+                <span class="material-symbols-outlined text-bleuhovered text-5xl">
+                    mail
+                </span>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <form action="https://formspree.io/f/xqalqqpe" method="POST">
+            <div class="emailform">
+                <h2 class="text-white text-2xl uppercase font-poppins text-center">Email</h2>
+                <input placeholder="Votre email..."
+                    class="flex lg:w-96 h-15 mt-2 text-white font-asapcondensed w-64 shadow text-xl bg-[#1F2937] mx-auto text-center rounded-lg h-8"
+                    type="email" name="Email" id="emailid">
+            </div>
+
+            <div class="nameEntreprise mt-12">
+                <h2 class="text-white text-2xl uppercase font-poppins text-center">Nom / Entreprise</h2>
+                <input placeholder="Votre nom..."
+                    class="flex h-15 lg:w-96 mt-2 text-white font-asapcondensed w-64 shadow text-xl bg-[#1F2937] mx-auto text-center rounded-lg h-8"
+                    type="text" name="Name" id="textmail">
+            </div>
+
+            <div class="numerodecontact mt-12">
+                <h2 class="text-white text-2xl uppercase font-poppins text-center">Numéro</h2>
+                <input placeholder="Votre numéro..."
+                    class="flex mt-2 lg:w-96 h-15 text-white font-asapcondensed w-64 shadow text-xl bg-[#1F2937] mx-auto text-center rounded-lg h-8"
+                    type="number" name="numerotel" id="numero">
+            </div>
+
+            <div class="message mt-12">
+                <h2 class="text-white text-2xl uppercase font-poppins text-center">Message</h2>
+                <textarea placeholder="Votre message..."
+                    class="mt-2 flex font-asapcondensed lg:w-196 text-white mx-auto w-64  text-xl bg-[#1F2937] mx-auto text-center rounded-lg h-64 resize-none"
+                    name="message" id="message"></textarea>
+            </div>
+
+            <div class="button">
+                <button type="submit"
+                    class="mt-12 mb-12 hover:h-15 bg-bleubasique w-64 hover:w-96 font-poppins flex h-12 mx-auto text-center hover:text-3xl transition-ease duration-300 text-white text-2xl rounded">
+                    <h2 class="flex mx-auto text-center my-auto uppercase">Envoyé</h2>
+                </button>
+            </div>
+        </form>
+
+    </main>
+
+</body>
+
+</html>

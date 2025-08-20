@@ -1,0 +1,282 @@
+<!--
+          ╔══════════════════════════════════════════════════════╗
+          ║                      Tom REGNIER                     ║
+          ║     Code pensé, design affûté, passion incarnée      ║
+          ║                     Mobile First                     ║
+          ║        Projet : ECF N°1 | Date : 02/07/2025          ║
+          ╚══════════════════════════════════════════════════════╝
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <!-- 🌬️ Métadonnée / SEO 🌬️ -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Développeur web front-end spécialisé en HTML, CSS, JavaScript, Bootstrap et Tailwind. Découvrez mes projets modernes, responsives et orientés UX/UI.">
+    <meta name="author" content="Tom REGNIER">
+    <meta name="copyright" content="Tom Regnier">
+    <meta name="robots" content="index, follow">
+
+    <!-- 🌬️ Métadonnée / SEO 🌬️ -->
+
+
+    <!-- 📕 Titre de la page 📕 -->
+
+    <title>TomREGNIER - Accueil</title>
+
+    <!-- 📕 Titre de la page 📕 -->
+
+
+    <!-- 🧭 Lien style, Tailwind, script, favicon 🧭 -->
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="./script.js" defer></script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- 🧭 Lien style, Tailwind, script, favicon 🧭 -->
+
+
+
+    <!-- 🔤 Style pour inclure les icons Google 🔤 -->
+
+    <style>
+        /* Icon (Les matérial) */
+        .material-symbols-outlined {
+            font-size: 3rem;
+            line-height: 1;
+        }
+    </style>
+
+    <!-- 🔤 Style pour inclure les icons Google 🔤 -->
+
+</head>
+
+<body data-page="index">
+
+    <header>
+
+        <!-- 🧑‍💻 Navigation desktop 🧑‍💻 -->
+
+        <nav id="desktopnav"
+            class="fixed top-4 hidden lg:flex left-0 right-0 bg-[#1F2937] z-50 rounded-lg flex space-x-15 w-max mx-auto">
+
+            <div class="homenavdesk flex group cursor-pointer">
+                <span class="material-symbols-outlined text-bleuhovered text-8xl transition">
+                    cottage
+                </span>
+
+                <h2 class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 text-bleuhovered">
+                    Accueil
+                </h2>
+
+            </div>
+
+            <a href="./me.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        face_5
+                    </span>
+
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase group-hover:text-cyan-400 transition tracking-wider my-auto ml-5">
+                        A propos
+                    </h2>
+
+                </div>
+            </a>
+
+            <a href="./projet.html">
+                <div class=" homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        business_center
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400 transition">
+                        Réalisation
+                    </h2>
+                </div>
+            </a>
+
+            <a href="./contact.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        mail
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400 transition">
+                        Contact
+                    </h2>
+                </div>
+            </a>
+
+        </nav>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- 🧑‍💻 Navigation desktop -->
+
+        <div class="title flex items-center justify-center w-full py-6">
+            <h2 class="text-3xl uppercase text-white font-poppins">Accueil</h2>
+        </div>
+
+
+
+        <div>
+
+            <div class="back w-10 lg:hidden fixed top-4 left-4 z-50">
+                <span id="flecheback" class="material-symbols-outlined text-bleuhovered">arrow_back</span>
+            </div>
+
+        </div>
+
+
+        <!-- ⬇️ NAVIGATION MOBILE -->
+        <nav id="menumobile"
+            class="fixed lg:hidden top-40 left-4 w-16 flex flex-col space-y-10 rounded bg-gray-800 text-white items-center justify-center py-8 z-50">
+
+
+            <div class="home flex relative">
+                <span class="material-symbols-outlined text-white text-8xl text-bleuhovered">
+                    cottage
+                </span>
+            </div>
+
+            <a href="./me.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-8xl hover:text-cyan-400 cursor-pointer">
+                        face_5
+                    </span>
+                </div>
+            </a>
+            <a href="./projet.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-8xl hover:text-cyan-400 cursor-pointer">
+                        business_center
+                    </span>
+                </div>
+            </a>
+
+            <a href="./contact.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-8xl hover:text-cyan-400 cursor-pointer">
+                        mail
+                    </span>
+                </div>
+            </a>
+
+        </nav>
+        <!-- ⬆️ FIN NAVIGATION -->
+
+
+
+    </header>
+
+    <main>
+
+        <div class="sectionpremiere flex lg:flex-row flex-col items-center justify-center w-full py-10">
+            <img class="rounded-full bg-cyan-500 shadow-lg lg:relative lg:left-30 shadow-cyan-500/50 w-32 h-auto mb-4"
+                src="./asset/logo/cropped_circle_image.webp" alt="Photo de moi">
+            <h2 class="text-3xl uppercase text-white font-poppins lg:relative lg:bottom-15 lg:left-35">Tom <span
+                    class="text-bleuciel">REGNIER</span>
+            </h2>
+            <p class="text-lg w-70 lg:w-2/5 lg:relative lg:right-20 ml-8 mt-5 text-white uppercase font-asapcondensed ">
+                Bonjour, je m'appelle Tom
+                <span class="text-bleuciel">REGNIER.</span>
+                Actuellement
+                en formation de Développeur Web et Web Mobile chez Mode 83, je vous invite à découvrir mon portfolio.
+            </p>
+        </div>
+
+        <div class="container block w-full mx-auto">
+            <a href="#" id="dowloadcv" onclick="telechargerCV()"
+                class="bg-bleubasique font-poppins uppercase text-white text-xl w-64 h-12 mt-8 rounded-lg flex items-center justify-center block mx-auto">
+                Télécharger le CV
+            </a>
+
+            <a href="#" id="viewcv" onclick="viewCv()"
+                class="bg-bleubasique font-poppins uppercase text-white text-xl w-64 h-12 mt-8 rounded-lg flex items-center justify-center block mx-auto">
+                Voir le CV
+            </a>
+        </div>
+        <br>
+
+        <hr
+            class="bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-400 w-1/2 h-1 rounded-full mx-auto mt-0 mb-5 shadow-md shadow-cyan-400/40">
+
+        <div class="presentation flex justify-center">
+            <h2 id="whoiam" class="text-3xl font-poppins text-white uppercase animation-ColorGradient">Qui je suis ?
+            </h2>
+        </div>
+
+        <div
+            class="blockpresentation block text-left md:text-center md:h-170 justify-center  bg-bleubasique w-4/5 mx-auto shadow-xl shadow-cyan-400/40 mt-8 h-270 p-5 rounded-lg">
+
+            <h2 id="presentation" class="text-3xl text-center text-white uppercase font-poppins">Présentation</h2>
+
+            <br>
+            <br>
+
+            <h2 id="introduction" class="text-2xl font-poppins text-white justify-self-start underline-offset-5">
+                Introduction :</h2>
+            <br>
+            <p class="text-white font-asapcondensed text-lg lg:text-left">Je m'appelle Tom <span
+                    class="text-bleuciel uppercase">Regnier</span>, je
+                suis né le 18 août 2006
+                (19 ans), et
+                je suis passionné
+                par
+                l'informatique,
+                en particulier par le développement.</p>
+            <br>
+            <h2 id="passion" class="text-2xl font-poppins text-white justify-self-start underline-offset-5">Une
+                passion :</h2>
+            <br>
+            <p class="text-white font-asapcondensed text-lg lg:text-left">Né dans l’ère du numérique, j’ai développé
+                très tôt une
+                passion pour l’informatique. Depuis mon enfance,
+                je m’investis dans ce domaine à travers divers projets, notamment la création de jeux vidéo sur la
+                plateforme Steam. Cette expérience m’a permis de coordonner une petite équipe composée de développeurs,
+                d’animateurs, de motion designers et de level designers.  Pour moi, le développement informatique est
+                bien plus qu’un métier : c’est un véritable terrain de jeu où je peux exprimer ma créativité et relever
+                des défis techniques avec enthousiasme.</p>
+
+            <br>
+            <br>
+            <h2 id="next" class="text-2xl font-poppins text-white justify-self-start underline-offset-5">
+                La suite :</h2>
+
+            <br>
+            <p class="text-white font-asapcondensed text-lg lg:text-left">À l’issue de cette formation, je souhaite
+                poursuivre mes
+                études en alternance dans le but d’enrichir mes compétences et d’approfondir mes connaissances en
+                informatique.</p>
+
+
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</body>
+
+</html>

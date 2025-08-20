@@ -1,0 +1,240 @@
+<!--
+          ╔══════════════════════════════════════════════════════╗
+          ║                      Tom REGNIER                     ║
+          ║     Code pensé, design affûté, passion incarnée      ║
+          ║                     Mobile First                     ║
+          ║        Projet : ECF N°1 | Date : 02/07/2025          ║
+          ╚══════════════════════════════════════════════════════╝
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Développeur web front-end spécialisé en HTML, CSS, JavaScript, Bootstrap et Tailwind. Découvrez mes projets modernes, responsives et orientés UX/UI.">
+    <meta name="author" content="Tom REGNIER">
+    <meta name="copyright" content="Tom Regnier">
+    <meta name="robots" content="index, follow">
+
+    <title>TomREGNIER - Mes passions</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+
+    <!-- JS -->
+    <script src="./scriptdesign.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!--  Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Icon (Les matérial) */
+        .material-symbols-outlined {
+            font-size: 3rem;
+            line-height: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- 🧑‍💻 Navigation desktop -->
+
+        <nav id="desktopnav"
+            class="fixed top-4 hidden lg:flex left-0 right-0 bg-[#1F2937] z-50 rounded-lg flex space-x-15 w-max mx-auto">
+
+            <a href="./index.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        cottage
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400 transition">
+                        Accueil
+                    </h2>
+                </div>
+            </a>
+
+            <div class="homenavdesk flex group cursor-pointer">
+                <span class="material-symbols-outlined text-bleuhovered text-8xl group-hover:text-cyan-400 transition">
+                    face_5
+                </span>
+                <h2 class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 text-bleuhovered">
+                    A propos
+                </h2>
+            </div>
+
+            <a href="./projet.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        business_center
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400 transition">
+                        Réalisation
+                    </h2>
+                </div>
+            </a>
+
+            <a href="./contact.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        mail
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400 transition">
+                        Contact
+                    </h2>
+                </div>
+            </a>
+
+        </nav>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- 🧑‍💻 Navigation desktop -->
+        <div class="title flex items-center justify-center w-full py-6">
+            <h2 class="text-3xl uppercase text-white font-poppins">Mes passions</h2>
+        </div>
+
+
+
+        <div>
+
+            <div class="back w-10 fixed lg:hidden top-4 left-4 z-50">
+                <span id="flecheback" class="material-symbols-outlined text-bleuhovered">arrow_back</span>
+            </div>
+
+        </div>
+
+        <!-- ⬇️ NAVIGATION MOBILE -->
+        <nav id="menumobile"
+            class="fixed lg:hidden top-40 left-4 w-16 flex flex-col space-y-10 rounded bg-gray-800 text-white items-center justify-center py-8 z-50">
+
+            <a href="./index.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400">
+                        cottage
+                    </span>
+                </div>
+            </a>
+
+            <div class="home flex relative">
+                <span class="material-symbols-outlined text-bleuhovered">
+                    face_5
+                </span>
+            </div>
+
+            <a href="./projet.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400 cursor-pointer">
+                        business_center
+                    </span>
+                </div>
+            </a>
+
+            <a href="./contact.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400 cursor-pointer">
+                        mail
+                    </span>
+                </div>
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container flex mx-auto justify-center">
+            <div class="design">
+                <div class="titleFirst text-3xl text-white font-poppins uppercase">
+                    <h2>L e &nbsp;
+                        <span id="DESIGND">d</span>
+                        <span id="DESIGNE">e</span>
+                        <span id="DESIGNS">s</span>
+                        <span id="DESIGNI">i</span>
+                        <span id="DESIGNG">g</span>
+                        <span id="DESIGNN">n</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <hr class="w-2/4 mx-auto mt-5 text-white">
+
+        <div
+            class="boiteText bg-bleubasique mt-8 rounded lg:w-3/5 lg:text-xl w-4/5 text-white font-asapcondensed p-3 text-lg mx-auto text-center">
+            <p>Le <span class="text-bleuciel">design</span> est une passion que j’ai commencée à développer
+                très tôt.
+                Dès mes débuts en
+                développement, voir une idée prendre vie à partir de rien et être fier du rendu final a été pour
+                moi l’une des meilleures sensations.</p>
+        </div>
+
+        <hr class="w-2/4 mx-auto mt-12 text-white">
+
+        <div class="titleDiv flex justify-center mx-auto mt-10">
+            <h2 class="titlesecond text-3xl text-white font-poppins uppercase">
+                <span id="letter1" class="letter letter-1">U</span>
+                <span id="letter2" class="letter letter-2">N</span>
+                <span id="letter3" class="letter letter-3">E</span>
+                <span id="letter4" class="letter letter-4">&nbsp;</span>
+                <span id="letter5" class="letter letter-5">P</span>
+                <span id="letter6" class="letter letter-6">A</span>
+                <span id="letter7" class="letter letter-7">S</span>
+                <span id="letter8" class="letter letter-8">S</span>
+                <span id="letter9" class="letter letter-9">I</span>
+                <span id="letter10" class="letter letter-10">O</span>
+                <span id="letter11" class="letter letter-11">N</span>
+            </h2>
+        </div>
+        <div
+            class="boiteTextSeconde bg-bleubasique mt-8 rounded lg:w-3/5 lg:text-xl w-4/5 text-white font-asapcondensed p-3 text-lg mx-auto text-center">
+            <p>Le côté créatif du design et la multitude de possibilités qu’il offre rendent chaque projet unique. C’est
+                ce qui me passionne : pouvoir imaginer, explorer et donner vie à des idées originales.</p>
+        </div>
+
+        <hr class="w-2/4 mx-auto mt-12 text-white">
+
+        <div class="button flex flex-col sm:flex-row sm:justify-between items-center gap-6 px-8 mt-12">
+            <a href="./index.html">
+                <button
+                    class="animated-border-button w-96 transition-ease duration-300 hover:text-2xl bg-bleubasique hover:shadow-[0px_0px_40px_10px_rgba(24,_216,_251,_0.7)] hover:bg-cyan-500 p-5 text-white text-xl justify-center rounded-[4px] font-poppins flex">
+                    Passion Précédente
+                </button>
+            </a>
+
+            <a href="./passiondev.html">
+                <button
+                    class="animated-border-button w-96 transition-ease duration-300 hover:text-2xl bg-bleubasique hover:shadow-[0px_0px_40px_10px_rgba(24,_216,_251,_0.7)] hover:bg-cyan-500 p-5 text-white text-xl justify-center rounded-[4px] font-poppins flex">
+                    Passion Suivante
+                </button>
+            </a>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

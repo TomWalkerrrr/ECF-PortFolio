@@ -1,0 +1,220 @@
+<!--
+          ╔══════════════════════════════════════════════════════╗
+          ║                      Tom REGNIER                     ║
+          ║     Code pensé, design affûté, passion incarnée      ║
+          ║                     Mobile First                     ║
+          ║        Projet : ECF N°1 | Date : 02/07/2025          ║
+          ╚══════════════════════════════════════════════════════╝
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Développeur web front-end spécialisé en HTML, CSS, JavaScript, Bootstrap et Tailwind. Découvrez mes projets modernes, responsives et orientés UX/UI.">
+    <meta name="author" content="Tom REGNIER">
+    <meta name="copyright" content="Tom Regnier">
+    <meta name="robots" content="index, follow">
+
+    <title>TomREGNIER - Projet</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <!-- JS -->
+    <script src="./contactscript.js" defer></script>
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+    <!--  Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    /* Icon (Les matérial) */
+    .material-symbols-outlined {
+        font-size: 3rem;
+        line-height: 1;
+    }
+</style>
+
+<body id="body" class="transition-colors duration-500 ease-in-out">
+
+    <header>
+        <!-- 🧑‍💻 Navigation desktop -->
+
+        <nav id="desktopnav"
+            class="fixed top-4 hidden lg:flex left-0 right-0 bg-[#1F2937] z-50 rounded-lg flex space-x-15 w-max mx-auto">
+            <a href="./index.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        cottage
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400 transition">
+                        Accueil
+                    </h2>
+                </div>
+            </a>
+
+            <a href="./me.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span
+                        class="material-symbols-outlined text-white group-hover:text-cyan-400 text-8xl group-hover:text-cyan-400 transition">
+                        face_5
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase group-hover:text-cyan-400 transition tracking-wider my-auto ml-5">
+                        A propos
+                    </h2>
+                </div>
+            </a>
+
+            <div class="homenavdesk flex group cursor-pointer">
+                <span class="material-symbols-outlined text-white text-8xl text-bleuhovered transition">
+                    business_center
+                </span>
+                <h2
+                    class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 text-bleuhovered transition">
+                    Réalisation
+                </h2>
+            </div>
+
+            <a href="./contact.html">
+                <div class="homenavdesk flex group cursor-pointer">
+                    <span class="material-symbols-outlined text-white text-8xl group-hover:text-cyan-400 transition">
+                        mail
+                    </span>
+                    <h2
+                        class="text-white text-2xl font-bakbakone uppercase tracking-wider my-auto ml-5 group-hover:text-cyan-400 transition">
+                        Contact
+                    </h2>
+                </div>
+            </a>
+
+        </nav>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- 🧑‍💻 Navigation desktop -->
+        <div class="title flex items-center justify-center w-full py-6">
+            <h2 id="headertitle" class="text-3xl uppercase text-white font-poppins">Réalisation</h2>
+        </div>
+
+        <div class="titlepassion">
+            <!-- <h2 id="soustitle" class="uppercase text-white flex font-poppins justify-center text-2xl"></h2> -->
+        </div>
+
+        <hr class="mt-5 w-2/4 flex mx-auto pb-5">
+
+        <div>
+
+            <div class="back w-10 fixed top-4 left-4 z-50 lg:hidden">
+                <span id="flecheback" class="material-symbols-outlined text-bleuhovered">arrow_back</span>
+            </div>
+
+        </div>
+
+        <!-- ⬇️ NAVIGATION MOBILE -->
+        <nav id="menumobile"
+            class="fixed lg:hidden top-40 left-4 w-16 flex flex-col space-y-10 rounded bg-gray-800 text-white items-center justify-center py-8 z-50">
+
+
+            <a href="./index.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400">
+                        cottage
+                    </span>
+                </div>
+            </a>
+
+            <a href="./me.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-white text-5xl hover:text-cyan-400 cursor-pointer">
+                        face_5
+                    </span>
+                </div>
+            </a>
+            <a href="./projet.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined text-bleuhovered text-5xl">
+                        business_center
+                    </span>
+                </div>
+            </a>
+
+            <a href="./contact.html">
+                <div class="home flex relative">
+                    <span class="material-symbols-outlined hover:text-cyan-400 cursor-pointer">
+                        mail
+                    </span>
+                </div>
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="containerbase space-y-8">
+            <h2 class="uppercase font-bakbakone text-center text-bleuciel text-2xl">Projet d'imitation du site Peugeot
+            </h2>
+            <div class="mainimage flex mx-auto">
+                <img class="mx-auto rounded" src="./asset/AutreAsset/peugeotcapture.webp"
+                    alt="Capture d'écrant qui représente une représentation du site Peugeot">
+            </div>
+
+            <div class="mobilecapture lg:flex ml-12 w-64 lg:ml-80">
+                <img src="./asset/AutreAsset/AccueilPeugeot-removebg-preview.webp"
+                    alt="Image de représentation du site peugeot de la page d'accueil" srcset="">
+                <img src="./asset/AutreAsset/capturepeugeotfirst-removebg-preview.webp"
+                    alt="Image de représentation du site peugeot de la page d'accueil" srcset="">
+                <img src="./asset/AutreAsset/CapturePeugeotQuatre-removebg-preview.webp"
+                    alt="Image de représentation du site peugeot de la page d'accueil" srcset="">
+            </div>
+            <div class="mobile block mx-auto">
+            </div>
+            <p class="bg-bleubasique p-8 w-80 h-auto text-white font-asapcondensed text-2xl rounded-lg mx-auto">En
+                explorant
+                différents sites
+                pour m’entraîner à les reproduire et
+                améliorer
+                mes compétences, je suis
+                tombé sur le site de Peugeot. J’ai constaté qu’il obtenait un score de seulement 30 % sur
+                Lighthouse. Cela m’a immédiatement donné envie de relever le défi : reproduire et optimiser ce site
+                en corrigeant ses points faibles.</p>
+
+
+            <a target="_blank" href="https://tomwalkerrrr.github.io/PeugeotProjet/#">
+                <button type="button"
+                    class="buttonmesprojet bg-bleubasique text-center hover:hoveredMesProjet text-white hover:border text-2xl font-bakbakone rounded-lg w-64 h-12 flex mx-auto">
+                    <h2 class="mx-auto my-auto text-3xl hover:hoveredMesProjet uppercase">Voir le site</h2>
+                </button>
+            </a>
+
+            <br>
+
+        </div>
+
+
+
+    </main>
+
+</body>
+
+</html>
